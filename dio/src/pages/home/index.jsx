@@ -1,8 +1,10 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Button } from "../../components/Buttons"
+
 const Home = () => {
     return (<>
         <h1>Home</h1>
-        <button><Link to="/Login">Fazer Login</Link></button>
+        <Link to="/Login"><Button title="Fazer Login" ></Button></Link>
     </>)
 }
 
