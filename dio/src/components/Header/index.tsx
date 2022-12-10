@@ -1,11 +1,11 @@
 import React from 'react'
 import logo from '../../assets/logo-dio.png';
-
+import { IHeader } from './types';
 import { Button } from '../Buttons';
 
 import { Container, Wrapper, BuscarInputContainer, Input, Row, Menu, MenuRight, UserPicture} from './styles';
 
-const Header = ({autenticado}) => {
+const Header = ({autenticado}:IHeader) => {
   return (
     <Wrapper>
       <Container>
@@ -28,7 +28,7 @@ const Header = ({autenticado}) => {
               <>
                 <MenuRight href="/">Home</MenuRight>
                 <Button title="Entrar" />
-                <Button title="Cadastrar" />
+                <Button title="Cadastrar"/>
               </>)}
           </Row>
       </Container>

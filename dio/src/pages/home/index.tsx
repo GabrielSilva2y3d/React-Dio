@@ -16,7 +16,7 @@ const Home = () => {
     }
 
     return (<>
-        <Header />
+        <Header autenticado={false} />
         <Container>
             <div>
                 <Title>
