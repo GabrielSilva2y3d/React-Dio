@@ -12,6 +12,10 @@ const Login = () => {
 
     const navigate = useNavigate()
 
+    const handleClickRegister = () => {
+        navigate('/Cadastro')
+    }
+
     const { control, handleSubmit, formState: { errors  } } = useForm<ILogin>({
         reValidateMode: 'onChange',
         mode: 'onChange',
@@ -54,7 +58,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CriarText onClick={handleClickRegister}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>

@@ -2,6 +2,7 @@ import React from "react";
 import { Home } from "./pages/home"
 import { Login } from "./pages/login"
 import { Feed } from "./pages/feed"
+import { Cadastro } from "./pages/cadastro";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path ="/Login" element={<Login />}></Route>
         <Route path ="/Feed" element={<Feed />}></Route>
+        <Route path ="/Cadastro" element={<Cadastro />}></Route>
       </Routes>
     </Router>
   );
